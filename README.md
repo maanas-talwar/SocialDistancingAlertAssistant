@@ -17,7 +17,7 @@ An arduino created social distancing alert assistant that signals a variety of a
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Circuit
-![](circuit.jpeg)
+![](circuit.jpg)
 
 ## Execution
 1. Connect the components as shown in the above circuit.
