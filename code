@@ -1,47 +1,65 @@
-const int red = 10;
-const int blue = 8;
-const int green = 12;
+const int red = 8;
 const int buzzer = 6;
-const int trigger = 4; // the pin which gives a signal for the sending of the microwave.
+const int trigger = 4; // the pin which gives a signal for the sending of he ultrasound.
 const int echo = 2; // the pin which receives the signal after deflection from object
 
 long duration, distance;
 void setup() {
-  Serial.begin(9600);                                  
-  pinMode(red, OUTPUT);
-  pinMode(green, OUTPUT);
-  pinMode(blue, OUTPUT);                                                                      
-  pinMode(buzzer, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(trigger, OUTPUT);
+    Serial.begin(9600);
+    pinMode(red, OUTPUT);
+    pinMode(buzzer, OUTPUT);
+    pinMode(echo, INPUT);
+    pinMode(trigger, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(trigger, HIGH); //trigpin's output pulse
-  delay(10); // waiting for the pulse to return
-  digitalWrite(trigger, LOW);
-  duration = pulseIn(echo, HIGH); //calibrate echo pin's pulse input
-  distance = duration * 0.034 / 2; // distanceCm is half the duration multiplied by 0.034
+    digitalWrite(trigger, HIGH); //trigpin's output pulse
+    delay(10); // waiting for the pulse to return
+    digitalWrite(trigger, LOW);
+    //calibrate echo pin's pulse input
+    duration = pulseIn(echo, HIGH);
+    // distanceCm is half the duration multiplied by 0.034
+    distance = duration * 0.034 / 2;
+    // cases for different distances
+    if (distance >= 0 && distance < 80) {
+        digitalWrite(red, HIGH);
+        digitalWrite(buzzer, HIGH);
+        delay(100);
+        digitalWrite(buzzer, LOW);
+        delay(100);
 
-  if (distance >= 0 && distance < 80) {
-    digitalWrite(buzzer, HIGH);
-    digitalWrite(red, HIGH);
-    digitalWrite(blue, HIGH);
-    digitalWrite(green, HIGH);
-  } else if (distance >= 80 && distance < 120) {
-    digitalWrite(buzzer, LOW);
-    digitalWrite(red, HIGH);
-    digitalWrite(blue, HIGH);
-    digitalWrite(green, HIGH);
-  } else if (distance >= 120 && distance < 180) {
-    digitalWrite(buzzer, LOW);
-    digitalWrite(red, LOW);
-    digitalWrite(blue, HIGH);
-    digitalWrite(green, HIGH);
-  } else if (distance >= 180) {
-    digitalWrite(buzzer, LOW);
-    digitalWrite(red, LOW);
-    digitalWrite(blue, LOW);
-    digitalWrite(green, HIGH);
-  }
+        digitalWrite(buzzer, HIGH);
+        delay(100);
+        digitalWrite(buzzer, LOW);
+        delay(100);
+
+        digitalWrite(buzzer, HIGH);
+        delay(100);
+        digitalWrite(buzzer, LOW);
+        delay(100);
+        digitalWrite(buzzer, HIGH);
+        delay(100);
+        digitalWrite(buzzer, LOW);
+        delay(100);
+        digitalWrite(buzzer, HIGH);
+        delay(1000);
+
+    } else if (distance >= 80 && distance < 120) {
+        digitalWrite(buzzer, LOW);
+        digitalWrite(red, HIGH);
+        delay(10);
+        digitalWrite(buzzer, HIGH);
+        digitalWrite(red, LOW);
+        delay(200);
+
+    } else if (distance >= 120 && distance < 160) {
+        digitalWrite(buzzer, HIGH);
+        digitalWrite(red, HIGH);
+        delay(300);
+        digitalWrite(red, LOW);
+        delay(400);
+    } else if (distance >= 160) {
+        digitalWrite(buzzer, HIGH);
+        digitalWrite(red, LOW);
+    }
 }
