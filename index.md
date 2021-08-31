@@ -11,7 +11,7 @@
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Circuit
-![](circuit.jpg)
+![](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/circuit.jpg)
 
 ## Project Demo
 ![](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
