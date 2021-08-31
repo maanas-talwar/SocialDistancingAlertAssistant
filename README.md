@@ -2,7 +2,7 @@ Social Distancing Alert Assistant
 =============
 
 ## Description
-An arduino created social distancing alert assistant that signals a variety of alarms depending on whether a person is too close to the user.
+Arduino-powered social distancing alert assistant to signal with a variety of alarms depending on the user’s proximity to others.
 
 ## Components required
 * Arduino Nano board
@@ -19,9 +19,12 @@ An arduino created social distancing alert assistant that signals a variety of a
 ## Circuit
 ![](circuit.jpg)
 
+## Project Demo
+![](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
+
 ## Execution
 1. Connect the components as shown in the above circuit.
-2. Using Arduino IDE, upload the code from 'code' file.
+2. Using Arduino IDE, upload the code from `code`.
 3. Power the device using the 9V battery.
 
 
