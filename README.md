@@ -17,10 +17,10 @@ Arduino-powered social distancing alert assistant to signal with a variety of al
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Circuit
-![](circuit.jpg)
+![circuit](circuit.jpg)
 
 ## Project Demo
-![](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
+![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
 
 ## Execution
 1. Connect the components as shown in the above circuit.
