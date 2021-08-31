@@ -11,10 +11,10 @@
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Circuit
-![circuit](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/circuit.jpg)
+![circuit](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/circuit.jpg?raw=true)
 
 ## Project Demo
-![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
+![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif?raw=true)
 
 ## Execution
 1. Connect the components as shown in the above circuit.
