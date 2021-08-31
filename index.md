@@ -10,15 +10,13 @@
 ## Software requirements
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
-## Circuit
-![circuit](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/circuit.jpg?raw=true)
-
-## Project Demo
-![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif?raw=true)
-
-## Execution
-1. Connect the components as shown in the above circuit.
-2. Using Arduino IDE, upload the code from `code`.
+## Usage
+1. Connect the components as shown in the circuit below.
+2. Using Arduino IDE, upload the code from `code` to Arduino Nano board.
 3. Power the device using the 9V battery.
 
+## Circuit
+![circuit](circuit.jpg)
 
+## Project Demo
+![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
