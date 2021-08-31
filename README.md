@@ -16,15 +16,16 @@ Arduino-powered social distancing alert assistant to signal with a variety of al
 ## Software requirements
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
+## Usage
+1. Connect the components as shown in the circuit below.
+2. Using Arduino IDE, upload the code from `code` to Arduino Nano board.
+3. Power the device using the 9V battery.
+
 ## Circuit
 ![circuit](circuit.jpg)
 
 ## Project Demo
 ![demo](https://github.com/maanas-talwar/SocialDistancingAlertAssistant/blob/main/tinkercad_prototype.gif)
 
-## Execution
-1. Connect the components as shown in the above circuit.
-2. Using Arduino IDE, upload the code from `code`.
-3. Power the device using the 9V battery.
 
 
